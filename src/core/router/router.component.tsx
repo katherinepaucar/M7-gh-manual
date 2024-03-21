@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter  as Router, Routes, Route } from "react-router-dom";
 
 import {
   CharacterDetailPage,
@@ -12,7 +12,7 @@ import { switchRoutes } from "./routes";
 
 export const RouterComponent: React.FC = () => {
   return (
-    <Router basename={`/${process.env.PUBLIC_URL}`}  >
+    <Router   >
       <Routes>
         <Route path={switchRoutes.root} element={<LoginPage />} />
         <Route

@@ -12,7 +12,7 @@ import { switchRoutes } from "./routes";
 
 export const RouterComponent: React.FC = () => {
   return (
-    <Router>
+    <Router basename={`/${process.env.PUBLIC_URL}`}  >
       <Routes>
         <Route path={switchRoutes.root} element={<LoginPage />} />
         <Route

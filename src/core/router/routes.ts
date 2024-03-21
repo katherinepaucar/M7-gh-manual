@@ -6,7 +6,7 @@ interface SwitchRoutes {
   characterDetail: string;
 }
 export const switchRoutes: SwitchRoutes = {
-  root: "/",
+  root: "",
   memberList: "/list",
   memberDetail: "/detail/:id",
   characterList: "/character-list",
